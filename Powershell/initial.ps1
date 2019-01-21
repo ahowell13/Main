@@ -3,7 +3,7 @@
 This script will take a search word or phrase and search every drive, including mapped drives, on the computer for the item.
 
 Author: Austin Howell
-Date: 1/20/2016
+Date: 1/20/2019
 
 #>
 
