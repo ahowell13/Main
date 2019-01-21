@@ -1,2 +1,2 @@
 # Main
-Austin's Main Repo
+This is the main public repository for Austin Howell.
