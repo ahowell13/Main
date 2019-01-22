@@ -1,4 +1,4 @@
-# Python program to get IP Address
+# Python program to get Hostname and IP Address
 
 import socket
 
