@@ -1,6 +1,6 @@
 Name = "Austin"
 
 if Name == "Austin":
-    print ( "poop" )
+    print ( "success" )
 
 
