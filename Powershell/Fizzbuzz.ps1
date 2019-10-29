@@ -15,26 +15,16 @@
 for ($num = 1; $num -le 100; $num++)
 {
 	
-	if ($num % 3 -eq 0)
-	{
-		
-		Write-Output "Fizz"
-	}
+	$output = ""
+	
+	if ($num % 3 -eq 0) { $output += "Fizz" }
+	if ($num % 5 -eq 0) { $output += "Buzz" }
+	
+	if ($output -eq "") { $output = $num }
+	
+	Write-Output $output
 	
 	
-	if ($num % 5 -eq 0)
-	{
-		
-		Write-Output "Buzz"
-	}
 	
-	if ($num % 5 -and $num % 3 -eq 0)
-	{
-		
-		Write-Output "Fizzbuzz"
-	}
-	
-	else { Write-Output $num }
 	
 }
-
