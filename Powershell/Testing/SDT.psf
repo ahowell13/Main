@@ -734,7 +734,9 @@ khrIw6nx6piHUwKniKn5fmT+P3IC+5sQ/g2Evi7nf5CHP5SQTXmu/r1cDOsJH/5vy34GV/SRnu4v
 M/mnzvo16JK/htyHuP+FzT+Y9OZBm/6rGP1Tf/4P5s70nwL+SsYwpR9PfmIrGF389kZPovgRqL9e
 NtHDDqx9+24v/Vp2oDjkx4Kk/x0J8pBt768lIeB//NfS4qG9X9Li/7hF/X8fsubfnhCfgfqTjQ9v
 u3f/Hxtc0mRzUwAA</Form>
-  <Code><![CDATA[
+  <Code><![CDATA[## Get-CimInstance Win32_ComputerSystem 
+
+
 $formSouthtechDiagnosticT_Load = {
 	
 	$global:hostname = HOSTNAME
