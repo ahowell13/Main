@@ -51,6 +51,19 @@ function LANinfo
 	
 	$LANinfo = Get-NetIPConfiguration -InterfaceIndex $activeinterface.interfaceindex
 	
-	$LANinfo
+	#Parse for the various information
+	
+	$ipv4addr = $LANinfo.ipv4address.ipaddress
+	$ipv4gateway = $LANinfo.ipv4defaultgateway.nexthop
+	$ipv4dnsserver = $LANinfo.dnsserver.serveraddresses
+	
+	#Output the Information
+	
+	Write-Host "Your LAN IP Address is: " $ipv4addr
+	Write-Host "Your Default Gateway is: " $ipv4gateway
+	Write-Host "Your DNS Server(s) are: " $ipv4dnsserver
 	
 }
+
+WANinfo
+LANinfo
