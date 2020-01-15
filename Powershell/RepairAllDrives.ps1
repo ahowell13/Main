@@ -8,6 +8,11 @@
 #>
 
 
+## Find all Physical Drives
+
+
+
+
 function ScanAllDrives {
 
 	(Get-Volume).DriveLetter | ForEach-Object { Repair-Volume -DriveLetter $_ -Scan -ErrorAction SilentlyContinue }

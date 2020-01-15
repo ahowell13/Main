@@ -733,6 +733,9 @@ O4MeYFMAAA==</Form>
 
 $formAHDiagnosticTool_Load = {
 	
+	## $adapterNEW = Get-CimInstance CIM_NetworkAdapter | ? { $_.netenabled -eq "True" -and $_.PhysicalAdapter -eq "True" }
+	# Cim method to pull the up adapter
+	
 	$global:hostname = HOSTNAME
 	
 	$global:ifindex = (Get-Netadapter | where status -eq "Up" | where InterfaceDescription -NotLike *sonicwall*).ifindex
@@ -754,6 +757,8 @@ $buttonComputerInfo_Click = {
 	$global:UPtime = (Get-CimInstance -ClassName Win32_OperatingSystem).Lastbootuptime
 	
 	$ServiceTag = (Get-CimInstance Win32_BIOS).serialnumber
+	
+	## (Get-CimInstance CIM_BIOSElement).serialnumber
 	
 	$global:loopback = "127.0.0.1"
 	
