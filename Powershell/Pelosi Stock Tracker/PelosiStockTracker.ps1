@@ -19,7 +19,7 @@ Function Get-NancyData {
 
     # hard coded latest transaction
 
-    $latesttransaction = "2021-07-23"
+    $latesttransaction = "2021-12-22"
 
     #get and parse data
     
