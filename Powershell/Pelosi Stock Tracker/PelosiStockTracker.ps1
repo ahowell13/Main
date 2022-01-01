@@ -29,6 +29,9 @@ Function Get-NancyData {
 
     $nancycurrent = $nancy[-1]
 
+    #check for new transaction
+    #TODO Return all objects after last transaction date
+
     if ( $nancycurrent.transaction_date -ne $latesttransaction ) {
 
         New-Item -Name "NEW_PELOSI_TRADE.TXT" -Path "C:\Users\$loggedonuser\Desktop\"
