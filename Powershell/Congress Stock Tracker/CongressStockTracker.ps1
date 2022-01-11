@@ -11,7 +11,7 @@ You need to manually keep the latest transaction updated. Recommended this be ru
 
 #>
 
-$latesttransaction = "2021-07-13"
+$latesttransaction = "2021-12-22"
 $Representative = "Hon. Nancy Pelosi"
 $loggedonuser = $env:USERNAME
 $dataURI = 'https://house-stock-watcher-data.s3-us-west-2.amazonaws.com/data/all_transactions.json'
