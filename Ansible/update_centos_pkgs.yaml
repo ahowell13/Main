@@ -2,7 +2,7 @@
   - name: Update all local packages on Cent-OS
     hosts: lab
     tasks:
-      - name: Ansible Update Cache and Upgrade all packages
+      - name: Ansible update cache and upgrade all packages
         dnf:
           name: "*"
           state: latest

@@ -1,0 +1,9 @@
+---
+  - name: Update all local packages on Ubuntu
+    hosts: lab
+    tasks:
+      - name: Ansible update cache all local packages on Ubuntu
+        apt:
+          name: "*"
+          state: latest
+          update_cache: yes
