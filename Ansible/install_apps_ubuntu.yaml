@@ -1,0 +1,13 @@
+---
+  - name: Install apps onto Ubuntu Servers
+    hosts: ubuntu
+    tasks:
+    - name: install nano
+      apt:
+        name: nano
+        state: latest
+
+    - name: install nmap
+      apt:
+        name: nmap
+        state: latest

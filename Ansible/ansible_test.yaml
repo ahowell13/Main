@@ -1,8 +1,0 @@
----
-  - name: iluvnano
-    hosts: lab
-    tasks:
-    - name: ensure nano is there
-      dnf:
-        name: nano
-        state: latest

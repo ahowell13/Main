@@ -1,6 +1,6 @@
 ---
   - name: Update all local packages on Ubuntu
-    hosts: lab
+    hosts: ubuntu
     tasks:
       - name: Ansible update cache all local packages on Ubuntu
         apt:
