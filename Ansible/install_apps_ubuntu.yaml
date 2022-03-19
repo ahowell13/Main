@@ -11,3 +11,9 @@
       apt:
         name: nmap
         state: latest
+    
+    - name: install tcpdump
+      apt:
+        name: tcpdump
+        state: latest
+        
