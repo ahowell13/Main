@@ -1,6 +1,6 @@
 ---
   - name: Update all local packages on Cent-OS
-    hosts: lab
+    hosts: centos
     tasks:
       - name: Ansible update cache and upgrade all packages
         dnf:
