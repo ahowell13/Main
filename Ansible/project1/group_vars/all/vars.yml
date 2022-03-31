@@ -1,0 +1,5 @@
+username: ansible
+packages:
+  - vim
+  - tmux
+  - htop
