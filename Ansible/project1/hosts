@@ -1,0 +1,3 @@
+[group1]
+
+server1 ansible_host=192.168.1.X ansible_user={{ username }} ansible_connection=ssh ansible_ssh_ private_key_file=/users/austin/.ssh/server1/privatekey
